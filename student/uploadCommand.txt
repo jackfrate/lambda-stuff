@@ -1,0 +1,8 @@
+aws lambda create-function --function-name  studentFn --runtime python3.7 \
+--zip-file fileb://studentfn.zip --handler app.handler \
+--role arn:aws:iam::366071345410:role/lambda-vpc-role \
+--vpc-config SubnetIds=subnet-5d306d3a,subnet-68917c25,SecurityGroupIds=sg-c275e598
+
+
+
+# get the role and the vpc stuff for the command in here too
